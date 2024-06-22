@@ -23,7 +23,7 @@ function Wicket() {
                 <CuboidCollider
                     args={[0.5, 1, 0.1]}
                     sensor
-                    onIntersectionEnter={() => alert("You are out")}
+                    onIntersectionEnter={() => console.log("Out")}
                 />
             </RigidBody>
 

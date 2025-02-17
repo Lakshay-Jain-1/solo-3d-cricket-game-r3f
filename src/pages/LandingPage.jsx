@@ -1,5 +1,5 @@
 
-import '../StarterApp.css'
+import '../stylesheets/landingPage.css'
 import { Canvas } from "@react-three/fiber"
 import { Stars,  Environment, Text3D, Center, Float, Stage, Html, SpotLight } from '@react-three/drei'
 

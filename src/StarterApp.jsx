@@ -99,7 +99,12 @@ function StarterApp() {
                             </button>
 
                             <button
-                                onClick={(() => alert("shift+left key ---> left shot \nshift+right key ---> right shot \nshift+forward key ---> forward shot"))}
+                                onClick={(() => alert(`
+                      TO BAT -->          
+shift+left key ---> left shot \nshift+right key ---> right shot \nshift+forward key ---> forward shot
+                    TO BALL -->
+push  that lever to right side to make it spin in right direction \n push that lever to left side to make it spin in left direction
+`))}
 
                                 style={{
                                     marginTop: "10px",

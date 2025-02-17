@@ -6,8 +6,8 @@ import { KeyboardControls, Loader } from "@react-three/drei"
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'
 
-const StarterApp = lazy(() => import('./StarterApp.jsx'));
-const WorkinProgress = lazy(() => import('./WorkinProgress.jsx'));
+const StarterApp = lazy(() => import('./components/StarterApp.jsx'));
+const WorkinProgress = lazy(() => import('./components/WorkinProgress.jsx'));
 
 
 

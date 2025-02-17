@@ -2,14 +2,14 @@
 import './App.css'
 
 import { Canvas } from "@react-three/fiber"
-import Pitch from "./Pitch.jsx"
-import { BallCollider, Physics, RigidBody, CuboidCollider } from "@react-three/rapier"
-import Bat from "./Bats.jsx"
-import Wicket from './Wicket.jsx'
-import Ground from './Ground.jsx'
+import Pitch from "./components/Pitch.jsx"
+import { Physics } from "@react-three/rapier"
+import Bat from "./components/Bats.jsx"
+import Wicket from './components/Wicket.jsx'
+import Ground from './components/Ground.jsx'
 import { RecoilRoot } from 'recoil'
-import Ball from './Ball.jsx'
-import Bowling from './Bowling.jsx'
+import Ball from './components/Ball.jsx'
+import Bowling from './components/Bowling.jsx'
 import { OrbitControls, Stars, Sky,Environment } from '@react-three/drei'
 
 
@@ -21,11 +21,7 @@ function App() {
         <directionalLight castShadow position={[5, 0, 0]} intensity={4} />
         <ambientLight intensity={0.5} />
         <Sky distance={45000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} />
-
-       
-
           <Environment preset='night' />
-
           <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
           <Physics   >
             <RecoilRoot >

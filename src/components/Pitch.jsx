@@ -1,8 +1,8 @@
 
 import * as THREE from "three"
-import { BallCollider, CuboidCollider, Physics, RigidBody,  } from "@react-three/rapier"
-import {RecoilRoot, atom,selector,useRecoilValue,useSetRecoilState} from 'recoil'
-import { Balllocation } from "./store/BallController"
+import { CuboidCollider,  RigidBody } from "@react-three/rapier"
+import {useSetRecoilState} from 'recoil'
+import { Balllocation } from "../store/BallController"
 
 function Pitch() {
 

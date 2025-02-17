@@ -3,7 +3,7 @@ import * as THREE from "three"
 import { BallCollider, ConvexHullCollider, CuboidCollider, CylinderCollider, Physics, RigidBody } from "@react-three/rapier"
 import { Circle } from "@react-three/drei"
 import { useSetRecoilState } from "recoil"
-import { Ballfollowing, Ballrigid } from "./store/BallController"
+import { Ballfollowing, Ballrigid } from "../store/BallController"
 
 
 function Ground() {

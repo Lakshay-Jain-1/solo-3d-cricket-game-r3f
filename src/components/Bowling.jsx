@@ -1,10 +1,8 @@
-
-import './App.css'
 import * as THREE from "three"
 import { Float,  RoundedBox, DragControls, Text } from "@react-three/drei"
 import {  useRef } from "react"
 import {useRecoilValue, useSetRecoilState } from 'recoil'
-import { Ballspeed ,Ballrigid } from './store/BallController'
+import { Ballspeed ,Ballrigid } from '../store/BallController'
 
 
 function Speed(){

@@ -1,12 +1,11 @@
 
-import './App.css'
 import * as THREE from "three"
 import {  Html, Float } from "@react-three/drei"
 import { useFrame } from '@react-three/fiber'
 import { BallCollider,  RigidBody } from "@react-three/rapier"
 import { useEffect } from "react"
 import {  useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil'
-import { Ballfollowing, Ballrigid, Ballspeed, Bowling } from "./store/BallController"
+import { Ballfollowing, Ballrigid, Ballspeed, Bowling } from "../store/BallController"
 import { useRef } from "react"
 import { Model } from './WhiteBallModel'
 

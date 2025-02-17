@@ -1,9 +1,5 @@
 
-import './App.css'
-import * as THREE from "three"
 import { Html, useKeyboardControls } from "@react-three/drei"
-import { useFrame, useThree } from '@react-three/fiber'
-import { MeshCollider, RigidBody } from "@react-three/rapier"
 import { useState, useRef } from "react"
 import { Model } from './Cricket_batsports'
 

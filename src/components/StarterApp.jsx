@@ -1,7 +1,7 @@
 
-import './StarterApp.css'
+import '../StarterApp.css'
 import { Canvas } from "@react-three/fiber"
-import { Stars, Sky, Environment, Text3D, Center, Float, Stage, Html, SpotLight } from '@react-three/drei'
+import { Stars,  Environment, Text3D, Center, Float, Stage, Html, SpotLight } from '@react-three/drei'
 
 
 function StarterApp() {
@@ -99,12 +99,17 @@ function StarterApp() {
                             </button>
 
                             <button
-                                onClick={(() => alert(`
-                      TO BAT -->          
-shift+left key ---> left shot \nshift+right key ---> right shot \nshift+forward key ---> forward shot
-                    TO BALL -->
-push  that lever to right side to make it spin in right direction \n push that lever to left side to make it spin in left direction
-`))}
+                               onClick={() => alert(
+                                `It is a solo 3D cricket game where you have to bowl and bat yourself.
+TO BAT:
+- Shift + Left Arrow → Left shot
+- Shift + Right Arrow → Right shot
+- Shift + Up Arrow → Forward shot
+
+TO BOWL:
+- Push the lever to the right → Spin in the right direction
+- Push the lever to the left → Spin in the left direction`
+                              )}
 
                                 style={{
                                     marginTop: "10px",

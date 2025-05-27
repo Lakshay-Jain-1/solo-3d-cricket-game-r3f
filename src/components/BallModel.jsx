@@ -7,22 +7,13 @@ Source: https://sketchfab.com/3d-models/cricket-ball-sports-white-f7fb5ae0d11e4d
 Title: Cricket Ball (Sports) (White).
 */
 
-import React, { useEffect, useRef } from 'react'
-import { useGLTF,Html } from '@react-three/drei'
-import * as THREE from "three"
-import { useFrame } from '@react-three/fiber'
+import { useGLTF } from '@react-three/drei'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/ball.glb')
-  
-
-
-
+  const { nodes, materials } = useGLTF('ball.glb')
   return (
    <>
-     
     <group  {...props} dispose={null}>
-      
       <group rotation={[-2.713, 0, -0.398]} scale={0.1}>
         <group position={[0.963, -0.205, -0.003]}>
           <mesh castShadow receiveShadow geometry={nodes.Cylinder002_Material002_0.geometry} material={materials['Material.002']} />
@@ -35,4 +26,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/ball.glb')
+useGLTF.preload('ball.glb')

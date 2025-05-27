@@ -4,7 +4,7 @@ import { KeyboardControls, Loader } from "@react-three/drei"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'
 import MultiPlayer from './pages/Multiplayer.jsx'
-import Solo3dCricketGame from './pages/Solo3dCricketGame.jsx'
+import Game from './pages/Game.jsx'
 
 const LandingPage = lazy(() => import('./pages/LandingPage.jsx'));
 
@@ -22,7 +22,7 @@ function App() {
               { name: 'right', keys: ['ArrowRight', "d"] },
               { name: 'shift', keys: ['Shift'] },
             ]}>
-              <Solo3dCricketGame />
+              <Game />
             </KeyboardControls>
           </Suspense>
         }

@@ -1,7 +1,7 @@
 
 import { Html, useKeyboardControls } from "@react-three/drei"
 import { useState, useRef } from "react"
-import { Model } from './Cricket_batsports'
+import { Model } from './BatModel'
 
 function Bat() {
     const [reset, setReset] = useState()
@@ -12,18 +12,12 @@ function Bat() {
 
     return (
         <>
-            <Html as="div" position={[-8,4.5,0]}>
-                <button  onClick={() => reseted()}>
+            <Html as="div" position={[-4.2, 4.5, 0]}   >
+                <button  onClick={() => reseted()} style={{width:"120px",height:"48px",backgroundColor:"lightblue"}}  >
                     Reset Bat
                 </button>
             </Html>
-
-
             <Model key={reset} />
-
-
-
-
         </>
     )
 }

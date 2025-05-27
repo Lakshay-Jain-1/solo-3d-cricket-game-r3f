@@ -6,11 +6,9 @@ import { Ballspeed ,Ballrigid } from '../store/BallController'
 
 
 function Speed(){
-    
     const setspeed = useSetRecoilState(Ballspeed)
     const positions = useRef()
     const setRigid= useSetRecoilState(Ballrigid)
-  
     const getposition = new THREE.Vector3()
 
     return (
@@ -20,8 +18,6 @@ function Speed(){
                     let { x, y, z } = positions.current.getWorldPosition(getposition)
                     setspeed([x, y, z]);
                     setRigid((prev)=>!prev)
-
-
                 }} >
                 <RoundedBox
                     position={[-3.5, -1, -2]}
@@ -30,14 +26,9 @@ function Speed(){
                     smoothness={4} // The number of curve segments. Default is 4
                     bevelSegments={4} // The number of bevel segments. Default is 4, setting it to 0 removes the bevel, as a result the texture is applied to the whole geometry.
                     creaseAngle={0.4} // Smooth normals everywhere except faces that meet at an angle greater than the crease angle
-
-
-
                 >
                     <meshPhongMaterial color="#f3f3f3" wireframe />
-
                 </RoundedBox>
-
             </DragControls>
     )
 }
@@ -46,32 +37,17 @@ function Speed(){
 
 function Bowling() {
     const speed = useRecoilValue(Ballspeed)
-    
     const setRigid= useSetRecoilState(Ballrigid)
     const getRigid= useRecoilValue(Ballrigid)
-
-
 
     return (
         <>
             <Float rotationIntensity={0.75} floatIntensity={0.5} >
                 <Text fontSize={1} fontWeight={500} fontStyle='italic' color={"red"} textAlign='right' rotation-y={Math.PI} position={[-3.5,3,6]}>
                     Speed: {(speed[1] * Math.random() * 6 + 55).toFixed(2)}
-                    
-                    
                 </Text>
-              
-
-
             </Float>
-
-
            {getRigid?<> </>:<Speed/> }
-           
-
-
-
-
         </>
     )
 }

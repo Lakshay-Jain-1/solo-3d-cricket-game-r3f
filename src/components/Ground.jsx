@@ -12,9 +12,6 @@ function Ground() {
 
     return (
         <>  
-
-
-
             {/* Ground */}
             <RigidBody type='fixed' restitution={[0]} colliders={"hull"}>
                 <mesh receiveShadow position={[0, -2, 0]} scale={12} rotation-x={Math.PI / 2} >
@@ -26,7 +23,7 @@ function Ground() {
 
             {/* Boundary */}
 
-            <RigidBody type="fixed" colliders={false} onCollisionEnter={() => console.log("YOOOO")} >
+            <RigidBody type="fixed" colliders={false} >
                 <CylinderCollider
                     args={[12, 12, 12]}
                     sensor

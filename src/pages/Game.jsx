@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber"
 import Pitch from "../components/Pitch.jsx"
 import { Physics } from "@react-three/rapier"
-import Bat from "../components/Bats.jsx"
+import Bat from "../components/Bat.jsx"
 import Wicket from '../components/Wicket.jsx'
 import Ground from '../components/Ground.jsx'
 import { RecoilRoot } from 'recoil'
@@ -10,7 +10,7 @@ import Bowling from '../components/Bowling.jsx'
 import {  Stars, Sky,Environment } from '@react-three/drei'
 
 
-function Solo3dCricketGame() {
+function Game() {
 
   return (
     <>
@@ -35,5 +35,4 @@ function Solo3dCricketGame() {
       </>
       )
 }
-
-export default Solo3dCricketGame
+export default Game

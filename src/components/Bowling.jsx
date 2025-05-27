@@ -22,7 +22,7 @@ function Speed() {
                     setRigid((prev) => !prev)
                 }} >
                 <RoundedBox
-                    position={[-1, -1, -2]}
+                    position={[-1.1, -0.3, -2]}
                     args={[0.5, 0.1, 0.25]} // Width, height, depth. Default is [1, 1, 1]
                     radius={0.05} // Radius of the rounded corners. Default is 0.05
                     smoothness={4} // The number of curve segments. Default is 4

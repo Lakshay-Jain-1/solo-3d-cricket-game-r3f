@@ -22,8 +22,8 @@ TO BAT:
 - Shift + Up Arrow → Forward shot
 
 TO BOWL:
-- Push the lever to the right → Spin in the right direction
-- Push the lever to the left → Spin in the left direction`
+- Drag the lever to the right → Spin in the right direction
+- Drag the lever to the left → Spin in the left direction`
   useFrame((state) => {
     if (follow) {
       const worldPosition = new THREE.Vector3()
@@ -47,11 +47,16 @@ TO BOWL:
 
   return (
     <>
+      <Html as="div" position={[1.9, 3.8, 0]} className="follow">
+        <button onClick={() => window.location.replace("https://youtu.be/TDJV_SOHFis")  } 
+        style={{ width: "320px",backgroundColor:"lightblue" }} >
+          Watch the demo video if you're unable to play the game
+        </button>
+      </Html>
 
       <Html as="div" position={[1.9, 4.5, 0]} className="follow">
         <button onClick={() => setFollow(true)} style={{ width: "110px",backgroundColor:"lightblue" }} >
           Follow the ball
-          (Animation)
         </button>
       </Html>
 
@@ -61,7 +66,6 @@ TO BOWL:
           style={{ width:"100px",backgroundColor:"lightblue",height:"48px" }}
         >
           How To Play ?
-
         </button>
       </Html>
       {Rigid ?

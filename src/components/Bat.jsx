@@ -12,7 +12,7 @@ function Bat() {
 
     return (
         <>
-            <Html as="div" position={[-1, 4.5, 0]}   >
+            <Html as="div" position={[-0.9, 4.5, 0]}   >
                 <button  onClick={() => reseted()} style={{width:"100px",height:"48px",backgroundColor:"lightblue"}}  >
                     Reset Bat
                 </button>

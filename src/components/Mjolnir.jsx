@@ -7,9 +7,9 @@ Source: https://sketchfab.com/3d-models/mjolnir-083f7dba8d464766bbe8f105eff67dea
 Title: Mjolnir
 */
 
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { Canvas, useFrame } from "@react-three/fiber"
+import {  useFrame } from "@react-three/fiber"
 import * as THREE from "three"
 
 export function Model(props) {

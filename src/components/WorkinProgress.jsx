@@ -1,15 +1,9 @@
-
-
 import { CuboidCollider, Physics, RigidBody } from "@react-three/rapier"
-import { Canvas, useFrame } from "@react-three/fiber"
-import { Stars, Environment, Text3D, Center, Float, Stage, Html, SpotLight, Lightformer, Trail, OrbitControls } from '@react-three/drei'
+import {  Environment, Text3D, Trail } from '@react-three/drei'
 import { Model } from "./Mjolnir"
-import { useRef, useEffect } from "react"
-import * as THREE from "three"
+import {  useEffect } from "react"
 
 function WorkinProgress() {
-
-
     useEffect(() => {
         document.querySelector("body").style.backgroundColor = "#454545";
     }, []);

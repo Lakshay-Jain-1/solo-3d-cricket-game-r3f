@@ -8,9 +8,15 @@ import { RecoilRoot } from 'recoil'
 import Ball from '../components/Ball.jsx'
 import Bowling from '../components/Bowling.jsx'
 import {  Stars, Sky,Environment } from '@react-three/drei'
+import { useEffect } from "react"
 
 
 function Game() {
+
+  useEffect(()=>{
+    var w = window.innerWidth;
+    console.log(w)
+  },[])
 
   return (
     <>

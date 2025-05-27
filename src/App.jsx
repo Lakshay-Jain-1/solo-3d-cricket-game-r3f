@@ -1,5 +1,5 @@
 import './stylesheets/App.css'
-import { React, Suspense ,lazy } from 'react'
+import { Suspense ,lazy } from 'react'
 import { KeyboardControls, Loader } from "@react-three/drei"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'

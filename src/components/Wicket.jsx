@@ -1,4 +1,4 @@
-import { CuboidCollider, CylinderCollider, MeshCollider, RigidBody, CapsuleCollider } from "@react-three/rapier"
+import { CuboidCollider,RigidBody } from "@react-three/rapier"
 import { Model } from './WicketModel'
 
 function Wicket() {

@@ -48,14 +48,14 @@ TO BOWL:
   return (
     <>
 
-      <Html as="div" position={[-5.5, 4.5, 0]} className="follow">
+      <Html as="div" position={[1.9, 4.5, 0]} className="follow">
         <button onClick={() => setFollow(true)} style={{ width: "110px",backgroundColor:"lightblue" }} >
           Follow the ball
           (Animation)
         </button>
       </Html>
 
-      <Html as="div" position={[-7,4.5,0]}>
+      <Html as="div" position={[0.4,4.5,0]}>
         <button
           onClick={() => alert(alertMessage)}
           style={{ width:"100px",backgroundColor:"lightblue",height:"48px" }}
@@ -77,7 +77,7 @@ TO BOWL:
         <Float speed={9} // Animation speed, defaults to 1
           rotationIntensity={5} // XYZ rotation intensity, defaults to 1
           floatIntensity={2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-          position={[1.5, 0, -4.5]}>
+          position={[0.42, 0, -4.5]}>
 
           <Model />
           <BallCollider args={[0.1]} />

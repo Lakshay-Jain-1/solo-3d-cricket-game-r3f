@@ -49,7 +49,7 @@ TO BOWL:
     <>
 
       <Html as="div" position={[-5.5, 4.5, 0]} className="follow">
-        <button onClick={() => setFollow(true)} style={{ width: "140px",backgroundColor:"lightblue" }} >
+        <button onClick={() => setFollow(true)} style={{ width: "110px",backgroundColor:"lightblue" }} >
           Follow the ball
           (Animation)
         </button>
@@ -58,7 +58,7 @@ TO BOWL:
       <Html as="div" position={[-7,4.5,0]}>
         <button
           onClick={() => alert(alertMessage)}
-          style={{ width: "140px",backgroundColor:"lightblue",height:"48px" }}
+          style={{ width:"100px",backgroundColor:"lightblue",height:"48px" }}
         >
           How To Play ?
 

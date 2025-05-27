@@ -12,8 +12,8 @@ function Bat() {
 
     return (
         <>
-            <Html as="div" position={[-4.2, 4.5, 0]}   >
-                <button  onClick={() => reseted()} style={{width:"120px",height:"48px",backgroundColor:"lightblue"}}  >
+            <Html as="div" position={[-4, 4.5, 0]}   >
+                <button  onClick={() => reseted()} style={{width:"100px",height:"48px",backgroundColor:"lightblue"}}  >
                     Reset Bat
                 </button>
             </Html>

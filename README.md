@@ -1,4 +1,4 @@
-# solo-3d-cricket-game-r3f
+# Solo 3d Cricket Game
 
 A browser-based 3D cricket simulation where users can interact with a bat and ball in a realistic game environment. Built using **React Three Fiber (R3F)**, this game simulates real-time ball motion and spin to create an immersive cricket experience directly in the browser.
 

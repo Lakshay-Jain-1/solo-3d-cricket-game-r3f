@@ -1,5 +1,5 @@
 
-import * as THREE from "three"
+import { Vector3 } from "three"
 import { Html, Float } from "@react-three/drei"
 import { useFrame } from '@react-three/fiber'
 import { BallCollider, RigidBody } from "@react-three/rapier"
@@ -26,7 +26,7 @@ TO BOWL:
 - Drag the lever to the left → Spin in the left direction`
   useFrame((state) => {
     if (follow) {
-      const worldPosition = new THREE.Vector3()
+      const worldPosition = new Vector3()
       positions.current?.getWorldPosition(worldPosition)
       state.camera.lookAt(worldPosition)
       setTimeout(() => {

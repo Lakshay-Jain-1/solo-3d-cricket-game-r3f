@@ -1,6 +1,6 @@
 
-import { Html, useKeyboardControls } from "@react-three/drei"
-import { useState, useRef } from "react"
+import { Html } from "@react-three/drei"
+import { useState } from "react"
 import { Model } from './BatModel'
 
 function Bat() {

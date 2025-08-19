@@ -1,5 +1,5 @@
 
-import * as THREE from "three"
+import {DoubleSide} from "three"
 import { CylinderCollider,  RigidBody } from "@react-three/rapier"
 import { useSetRecoilState } from "recoil"
 import { Ballfollowing, Ballrigid } from "../store/BallController"
@@ -16,7 +16,7 @@ function Ground() {
                 <mesh receiveShadow position={[0, -2, 0]} scale={12} rotation-x={Math.PI / 2} >
 
                     <circleGeometry />
-                    <meshStandardMaterial side={THREE.DoubleSide} color="brown" />
+                    <meshStandardMaterial side={DoubleSide} color="brown" />
                 </mesh>
             </RigidBody>
 

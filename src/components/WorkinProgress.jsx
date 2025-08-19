@@ -1,5 +1,5 @@
 import { CuboidCollider, Physics, RigidBody } from "@react-three/rapier"
-import {  Environment, Text3D, Trail } from '@react-three/drei'
+import { Text3D, Trail } from '@react-three/drei'
 import { Model } from "./Mjolnir"
 import {  useEffect } from "react"
 
@@ -11,7 +11,6 @@ function WorkinProgress() {
     return (
 
         <>
-            <Environment preset='night' />
 
             <Physics >
                 <RigidBody  colliders="hull">

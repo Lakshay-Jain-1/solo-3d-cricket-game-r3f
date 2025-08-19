@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/cricket-batsports-d2d8e37424cb433a8f16c7
 Title: Cricket Bat(Sports)
 */
 
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import { useGLTF ,useKeyboardControls} from '@react-three/drei'
 import { CuboidCollider, RigidBody } from '@react-three/rapier'
 import { useFrame } from '@react-three/fiber'

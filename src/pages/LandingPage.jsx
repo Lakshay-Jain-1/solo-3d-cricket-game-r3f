@@ -1,14 +1,13 @@
 
 import '../stylesheets/landingPage.css'
 import { Canvas } from "@react-three/fiber"
-import { Stars,  Environment, Text3D, Center, Float, Stage, Html, SpotLight } from '@react-three/drei'
+import { Environment, Text3D, Center, Stage, Html, SpotLight } from '@react-three/drei'
 
 
 function StarterApp() {
     return (
         <>
             <Canvas color='black' shadows={true} camera={{ position: [0, 0, -6] }} frameloop='demand'>
-                <Stars count={5000} factor={4} />
                 <Environment preset='night' />
                 <SpotLight
                     color="black"

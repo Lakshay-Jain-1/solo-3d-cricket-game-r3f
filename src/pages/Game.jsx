@@ -1,14 +1,16 @@
 import { Canvas } from "@react-three/fiber"
-import Pitch from "../components/Pitch.jsx"
 import { Physics } from "@react-three/rapier"
-import Bat from "../components/Bat.jsx"
-import Wicket from '../components/Wicket.jsx'
-import Ground from '../components/Ground.jsx'
 import { RecoilRoot } from 'recoil'
-import Ball from '../components/Ball.jsx'
-import Bowling from '../components/Bowling.jsx'
-import {  Stars, Sky,Environment } from '@react-three/drei'
-import { useEffect } from "react"
+import {  Sky } from '@react-three/drei'
+import { lazy, useEffect } from "react"
+
+
+const Pitch = lazy(() => import("../components/Pitch.jsx"));
+const Bat = lazy(() => import("../components/Bat.jsx"));
+const Wicket = lazy(() => import("../components/Wicket.jsx"));
+const Ground = lazy(() => import("../components/Ground.jsx"));
+const Ball = lazy(() => import("../components/Ball.jsx"));
+const Bowling = lazy(() => import("../components/Bowling.jsx"));
 
 
 function Game() {
@@ -24,8 +26,6 @@ function Game() {
         <directionalLight castShadow position={[5, 0, 0]} intensity={4} />
         <ambientLight intensity={0.5} />
         <Sky distance={45000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} />
-          <Environment preset='night' />
-          <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
           <Physics   >
             <RecoilRoot >
               <Ground />

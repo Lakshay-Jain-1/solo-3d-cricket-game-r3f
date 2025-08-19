@@ -10,13 +10,13 @@ Title: Mjolnir
 import  { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {  useFrame } from "@react-three/fiber"
-import * as THREE from "three"
+import {Vector3} from "three"
 
 export function Model(props) {
   const { nodes, materials } = useGLTF('/mjolnir.glb')
   const hammer = useRef()
   useFrame((state) => {
-      const worldPosition = new THREE.Vector3()
+      const worldPosition = new Vector3()
       hammer.current?.getWorldPosition(worldPosition)
          
       state.camera.lookAt(worldPosition)

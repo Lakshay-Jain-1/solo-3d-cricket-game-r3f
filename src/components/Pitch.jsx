@@ -1,5 +1,5 @@
 
-import * as THREE from "three"
+import  {DoubleSide} from "three"
 import { CuboidCollider, RigidBody } from "@react-three/rapier"
 import { useSetRecoilState } from 'recoil'
 import { Balllocation } from "../store/BallController"
@@ -15,7 +15,7 @@ function Pitch() {
             <RigidBody type='fixed' restitution={[0]}>
                 <mesh onClick={({ x, y }) => { balllocation({ x, y }) }} receiveShadow position={[0, -2, 0]} scale={[3, 0.5, 15]}  >
                     <boxGeometry />
-                    <meshBasicMaterial side={THREE.DoubleSide} color="green" />
+                    <meshBasicMaterial side={DoubleSide} color="green" />
                 </mesh>
             </RigidBody>
         </>

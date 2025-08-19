@@ -10,7 +10,7 @@ Title: Cricket Ball (Sports) (White).
 import { useGLTF } from '@react-three/drei'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('ball.glb')
+  const { nodes, materials } = useGLTF('/ball.glb')
   return (
    <>
     <group  {...props} dispose={null}>
@@ -26,4 +26,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('ball.glb')
+useGLTF.preload('/ball.glb')

@@ -1,4 +1,4 @@
-import * as THREE from "three"
+import { Vector3 } from "three"
 import { Float, RoundedBox, DragControls, Text } from "@react-three/drei"
 import { useRef, useState } from "react"
 import { useRecoilValue, useSetRecoilState } from 'recoil'
@@ -9,7 +9,7 @@ function Speed() {
     const setspeed = useSetRecoilState(Ballspeed)
     const positions = useRef()
     const setRigid = useSetRecoilState(Ballrigid)
-    const getposition = new THREE.Vector3()
+    const getposition = new Vector3()
 
 
     return (

@@ -3,10 +3,10 @@ import { Suspense ,lazy } from 'react'
 import { KeyboardControls, Loader } from "@react-three/drei"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Canvas } from '@react-three/fiber'
-import MultiPlayer from './pages/Multiplayer.jsx'
-import Game from './pages/Game.jsx'
 
 const LandingPage = lazy(() => import('./pages/LandingPage.jsx'));
+const MultiPlayer = lazy(() => import('./pages/Multiplayer.jsx'));
+const Game = lazy(() => import('./pages/Game.jsx'));
 
 function App() {
 

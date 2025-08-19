@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 import {  RigidBody } from '@react-three/rapier'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/untitled1.glb')
+  const { nodes, materials } = useGLTF('/wicket.glb')
   return (
     <RigidBody colliders='trimesh' position={[0,1,11.7]}   rotation-y={Math.PI/2} mass={2000}>
     <group {...props} dispose={null} scale={0.05}>
@@ -22,4 +22,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/untitled1.glb')
+useGLTF.preload('/wicket.glb')

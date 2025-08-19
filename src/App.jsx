@@ -2,10 +2,8 @@ import './stylesheets/App.css'
 import { Suspense ,lazy } from 'react'
 import { KeyboardControls, Loader } from "@react-three/drei"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Canvas } from '@react-three/fiber'
 
 const LandingPage = lazy(() => import('./pages/LandingPage.jsx'));
-const MultiPlayer = lazy(() => import('./pages/Multiplayer.jsx'));
 const Game = lazy(() => import('./pages/Game.jsx'));
 
 function App() {
@@ -36,16 +34,6 @@ function App() {
           </Suspense>
         }
         ></Route>
-        <Route path='/multiplayer' element={
-          <Suspense fallback={<Loader />}>
-            <Canvas color='black' shadows={true} camera={{ position: [0, 0, -2] }} frameloop='demand'>
-              <MultiPlayer />
-            </Canvas>
-
-          </Suspense>
-        }
-        ></Route>
-
       </Routes>
     </BrowserRouter>
   )

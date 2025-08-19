@@ -41,7 +41,6 @@ function Speed() {
 
 function Bowling() {
     const speed = useRecoilValue(Ballspeed)
-    const setRigid = useSetRecoilState(Ballrigid)
     const getRigid = useRecoilValue(Ballrigid)
     const [displaySpeed, setDisplaySpeed] = useState(false)
     useState(() => {

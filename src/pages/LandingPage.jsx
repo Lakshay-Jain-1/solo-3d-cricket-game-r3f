@@ -1,14 +1,15 @@
 
 import '../stylesheets/landingPage.css'
 import { Canvas } from "@react-three/fiber"
-import { Environment, Text3D, Center, Stage, Html, SpotLight } from '@react-three/drei'
+import { Text3D, Center, Stage, SpotLight } from '@react-three/drei'
+import { useNavigate } from 'react-router-dom'
 
 
 function StarterApp() {
+    const navigate = useNavigate()
     return (
         <>
             <Canvas color='black' shadows={true} camera={{ position: [0, 0, -6] }} frameloop='demand'>
-                <Environment preset='night' />
                 <SpotLight
                     color="black"
                     position={[13, 6.5, 0]}
@@ -24,72 +25,13 @@ function StarterApp() {
                             <meshStandardMaterial color="orange" />
                         </Text3D>
 
-                        <Html as='div' position={[-2, 5, 1]}>
-                            <button
-                                style={{
+                        <Text3D letterSpacing={0.06} position={[-2.3, 3.4, 1.2]} size={0.8}  font="/Bold.json" rotation-y={Math.PI} rotation-x={0} onClick={()=>navigate("/game")} >
+                            Play →
+                            <meshStandardMaterial color="orange" />
+                        </Text3D>
 
-                                    borderRadius: "5%",
-                                    backgroundColor: "whitesmoke",
-                                    fontSize: "40px",
-                                    color: "blueviolet",
-                                    textAlign: "center",
-                                    marginLeft: "38px",
-                                    background: "linear-gradient(202deg, rgba(0,0,0,1) 0%, rgba(31,4,11,1) 37%, rgba(252,252,252,1) 100%)",
-                                    padding: "10px 20px",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    display: "inline-block",
-                                    textDecoration: "none",
-                                    width:"85%"
-                                }}
-                            >
-                                <a
-                                    href="./game"
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "whitesmoke", // Inherits the button's color
-                                        textAlign: "center",
-                                        display: "block",
-                                        width: "100%",
-                                        height: "100%"
-                                    }}
-                                >
-                                    Play
-                                </a>
-                            </button>
-                            <button
 
-                                style={{
-                                    marginTop: "10px",
-                                    borderRadius: "5%",
-                                    backgroundColor: "whitesmoke",
-                                    fontSize: "40px",
-                                    color: "blueviolet",
-                                    textAlign: "center",
-                                    marginLeft: "40px",
-                                    background: "linear-gradient(202deg, rgba(0,0,0,1) 0%, rgba(31,4,11,1) 37%, rgba(252,252,252,1) 100%)",
-                                    padding: "10px 20px",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    display: "inline-block",
-                                    textDecoration: "none"
-                                }}
-                            >
-                                <a
-                                    href="/multiplayer"
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "whitesmoke", // Inherits the button's color
-                                        textAlign: "center",
-                                        display: "block",
-                                        width: "100%",
-                                        height: "100%"
-                                    }}
-                                >
-                                    Multiplayer
-                                </a>
-                            </button>
-                        </Html>
+                        
                     </Center>
                 </Stage>
             </Canvas>

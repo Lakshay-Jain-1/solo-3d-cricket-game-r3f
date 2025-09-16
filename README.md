@@ -28,7 +28,7 @@ A browser-based 3D cricket simulation where users can interact with a bat and ba
 
 - **Framework**: React  
 - **3D Rendering**: React Three Fiber (R3F), Three.js  
-- **Physics Engine**:  Drei  
+- **Physics Engine**: Rapier  
 
 ---
 
